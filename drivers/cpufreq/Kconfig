@@ -49,6 +49,11 @@ choice
 	help
 	  This option sets which CPUFreq governor shall be loaded at
 	  startup. If in doubt, select 'performance'.
+	  
+config CPU_FREQ_DEFAULT_GOV_NIGHTMARE
+	bool "nightmare"
+	select CPU_FREQ_GOV_NIGHTMARE
+	help
 
 config CPU_FREQ_DEFAULT_GOV_PERFORMANCE
 	bool "performance"
@@ -119,6 +124,11 @@ config CPU_FREQ_DEFAULT_GOV_INTELLIACTIVE
 	  'interactive' governor for latency-sensitive workloads.
 
 endchoice
+
+config CPU_FREQ_DEFAULT_GOV_NIGHTMARE
+	bool "nightmare"
+	select CPU_FREQ_GOV_NIGHTMARE
+	help
 
 config CPU_FREQ_GOV_PERFORMANCE
 	tristate "'performance' governor"
