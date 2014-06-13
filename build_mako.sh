@@ -10,7 +10,7 @@ res1=$(date +%s.%N)
 
 export ARCH=arm
 export CROSS_COMPILE=toolchain/bin/arm-cortex_a15-linux-gnueabihf-
-make mako_config
+make mako_defconfig
 make -j4
 
 # Tiempo total
